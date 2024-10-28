@@ -74,6 +74,8 @@ namespace CRUD_AA
                 if (res)
                 {
                     MessageBox.Show("Asignatura guardada exitosamente.");
+                     txNAsignatura.Text = "";
+                     txCreditos.Text = "";
                 }
                 else
                 {
@@ -123,6 +125,8 @@ namespace CRUD_AA
             if (modificar)
             {
                 MessageBox.Show("Asignatura modificada correctamente");
+                 txNAsignatura.Text = "";
+                 txCreditos.Text = "";
             }
             else
             {
