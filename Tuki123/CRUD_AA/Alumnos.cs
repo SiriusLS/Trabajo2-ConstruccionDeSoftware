@@ -100,6 +100,11 @@ namespace CRUD_AA
             if (res)
             {
                 MessageBox.Show("Alumno guardado exitosamente.");
+                txNombre.Text = "";
+                txAPaterno.Text = "";
+                txAMaterno.Text = "";
+                txEmail.Text = "";
+                txNMatricula.Text = "";
             }
             else
             {
@@ -170,6 +175,11 @@ namespace CRUD_AA
             if (modificar)
             {
                 MessageBox.Show("Alumno modificado correctamente");
+                txNombre.Text = "";
+                txAPaterno.Text = "";
+                txAMaterno.Text = "";
+                txEmail.Text = "";
+                txNMatricula.Text = "";
             }
             else
             {
@@ -187,6 +197,7 @@ namespace CRUD_AA
             if (IdGlobal == null)
             {
                 GuardarAlumno();
+                
             }
             else // si hay almuno seleccionado se modifica  
             {
